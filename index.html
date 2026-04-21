@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>みゆき写真館</title>
+    <meta
+      name="description"
+      content="プロの撮影でスタジオ写真を撮ってみませんか"
+    />
+
+    <!-- viewportの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- splide.css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- OGP -->
+  </head>
+
+  <body>
+    <div class="cover cover-home">
+      <header class="page-header wrapper">
+        <h1 class="align-center">
+          <a href="index.html"
+            ><img class="logo" src="images/logo.png" alt="みゆき写真館 ホーム"
+          /></a>
+        </h1>
+        <nav>
+          <button class="btn-menu">≡</button>
+          <ul class="main-nav font-english">
+            <li><a href="menu.html">撮影メニュー</a></li>
+            <li><a href="price.html">料金</a></li>
+            <li><a href="faq.html">よくある質問</a></li>
+          </ul>
+        </nav>
+        <div class="btn-mail">
+          <a href="contact.html"
+            ><img
+              class="icon"
+              src="images/mail_icon.png"
+              alt="メールのアイコン"
+            />
+            <p>お問い合わせ</p>
+          </a>
+        </div>
+        <div class="btn contact-btn">
+          <a href="contact.html">お問い合わせ ＞</a>
+        </div>
+      </header>
+    </div>
+
+    <section class="about">
+      <h3 class="heading-large font-english">みゆき写真館について</h3>
+      <p class="align-center">
+        みゆき写真館は、みなさまの人生の物語に寄り添う、温かな空間づくりを大切にしています。
+        <br />
+        心落ち着くアットホームな雰囲気の中で、ご家族の笑顔やご自身の大切な瞬間の輝きを、<br />
+        丁寧に、そして鮮やかに記録しませんか。
+        <br />
+        日常の延長にあるような、ゆったりとした時間の中で、一生ものの思い出を作ります。
+      </p>
+      <div class="align-center">
+        <video
+          class="video"
+          src="images/PhotoStudio.mp4"
+          controls
+          width="560px"
+          height="315px"
+        ></video>
+      </div>
+      <div class="align-center">
+        <a class="btn" href="menu.html">撮影メニューを見る</a>
+      </div>
+    </section>
+
+    <div class="splide wrapper" role="group" aria-label="Splideの基本的なHTML">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev"></button>
+        <button class="splide__arrow splide__arrow--next"></button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="images/753_1.jpg" alt="" /></li>
+          <li class="splide__slide"><img src="images/dog.jpg" alt="" /></li>
+          <li class="splide__slide"><img src="images/cat.jpg" alt="" /></li>
+          <li class="splide__slide">
+            <img src="images/bridetwo.jpg" alt="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/brideone.jpg" alt="" />
+          </li>
+          <li class="splide__slide"><img src="images/dog2.jpg" alt="" /></li>
+          <li class="splide__slide"><img src="images/shonenn.jpg" alt="" /></li>
+        </ul>
+      </div>
+      <ul class="splide__pagination"></ul>
+    </div>
+
+    <footer class="page-footer">
+      <h3 class="heading-large font-english">アクセス・店舗情報</h3>
+      <div class="wrapper">
+        <section class="location">
+          <div class="location-info">
+            <table class="info">
+              <tr>
+                <th>住所</th>
+                <td>東京都港区六本木 0-0 ◯◯◯</td>
+              </tr>
+              <tr>
+                <th>電話</th>
+                <td>03-1111-XXXX</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>10:00〜20:00</td>
+              </tr>
+              <tr>
+                <th>店休日</th>
+                <td>水曜</td>
+              </tr>
+            </table>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12960.64377114398!2d139.67745349999998!3d35.6976569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f30062b6db45%3A0x89b5334c71797387!2z5qCq5byP5Lya56S-RyZUIOS4remHjuWdguS4iuagoQ!5e0!3m2!1sja!2sjp!4v1774934433952!5m2!1sja!2sjp"
+              width="720"
+              height="320"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+
+      <div class="copyright">
+        <small>&copy; 2026 MIYUKI Photo Studio</small>
+      </div>
+    </footer>
+  </body>
+
+  <!-- JavaScript -->
+  <script>
+    const btn = document.querySelector(".btn-menu");
+    const nav = document.querySelector(".main-nav");
+
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("open-menu");
+      if (btn.innerHTML === "≡") {
+        btn.innerHTML = "×";
+      } else {
+        btn.innerHTML = "≡";
+      }
+    });
+  </script>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+  <script>
+    const options = {
+      mediaQuery: "min",
+      fixedWidth: "24rem",
+      heightRatio: 0.3,
+      gap: 16,
+      type: "loop",
+      arrows: false,
+      drag: "free",
+      flickPower: 100,
+      pagination: false,
+      rewind: true,
+
+      autoScroll: {
+        speed: 0.5,
+        pauseOnHover: false,
+        pauseOnFocus: true,
+      },
+      breakpoints: {
+        1025: {
+          gap: 24,
+          fixedWidth: "10rem",
+        },
+      },
+    };
+
+    const splide = new Splide(".splide", options);
+
+    splide.mount(window.splide.Extensions);
+  </script>
+</html>

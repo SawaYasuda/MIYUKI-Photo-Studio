@@ -1,0 +1,564 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "BIZ UDPMincho", sans-serif;
+  line-height: 1.7;
+  color: #44514b;
+  background-color: #f5f3ed;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.align-center {
+  text-align: center;
+}
+
+/* 見出し */
+.font-english {
+  font-family: "BIZ UDPMincho", sans-serif;
+  font-weight: normal;
+}
+
+/* h2とh3のフォントサイズや配置を共通化 */
+/* Newsページのレイアウトも共通化 */
+.page-title,
+.heading-large {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  line-height: 1.4;
+  color: #002f47;
+  background-color: rgba(241, 241, 241, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.heading-large {
+  margin-bottom: 1rem;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  background-color: #002f47;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: #668290;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+/* ヘッダー
+------------------------------- */
+.logo {
+  width: 64px;
+  margin-top: 12px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.25rem;
+  list-style: none;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.main-nav a {
+  color: #44514b;
+}
+
+.main-nav a:hover {
+  color: #002f47;
+}
+
+.contact-btn a {
+  color: #fff;
+  font-weight: normal;
+}
+
+/* ヘッダーカバー画像
+------------------------------- */
+.cover {
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+}
+
+.sub-cover {
+  background-size: cover;
+  /* background-position: center; */
+  height: 400px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+/* HOME
+------------------------------- */
+.cover-home {
+  background-image: url(../images/studio_s.jpg);
+}
+
+.mainvisual {
+  margin: 2rem 0;
+  border-radius: 30px;
+}
+
+.mainvisual img {
+  border-radius: 30px;
+  box-shadow: 0 0 8px gray;
+}
+
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.video {
+  margin-bottom: 3rem;
+}
+
+.splide {
+  margin-top: 3rem;
+  background-color: #002f47;
+  border-radius: 30px;
+}
+
+.splide__list img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  margin: 80px 0;
+}
+
+/* MENU
+------------------------------- */
+.cover-menu {
+  background-image: url(../images/menu_header_s.jpg);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.item p {
+  font-size: 0.875rem;
+}
+
+/* PRICE
+------------------------------- */
+.cover-price {
+  background-image: url(../images/price_header_s.jpg);
+}
+
+.price-title {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.table_price {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 1rem;
+}
+.table_price th {
+  padding: 10px;
+  background: #778ca3;
+  border: solid 1px #666666;
+  color: #ffffff;
+}
+.table_price td {
+  padding: 10px;
+  border: solid 1px #666666;
+}
+.table_price td:first-child {
+  background: #fff5ee;
+}
+
+/* FAQ
+------------------------------- */
+/* FAQカバー画像 */
+.cover-faq {
+  background-image: url(../images/faq_header_s.jpg);
+}
+
+/* アコーディオン全体 */
+.faq {
+  max-width: 736px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+}
+
+/* 1つのQ&Aブロック */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 質問ボタン */
+.accordion-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.25rem 2.5rem 1.25rem 0;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #44514b;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* 矢印アイコン */
+.accordion-question::after {
+  content: "▼";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #002f47;
+  transition: transform 0.3s;
+}
+
+/* 開いたときに矢印を反転 */
+.accordion-question.is-open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* 回答（初期状態：非表示） */
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* 回答（開いた状態） */
+.accordion-answer.is-open {
+  max-height: 300px;
+}
+
+.accordion-answer p {
+  padding: 0 0.5rem 1.25rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Q / A ラベル */
+.label-q,
+.label-a {
+  display: inline-block;
+  font-family: "BIZ UDPMincho ", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.label-q {
+  color: #002f47;
+}
+.label-a {
+  color: #44514b;
+}
+
+/* CONTACT
+------------------------------- */
+.cover-contact {
+  background-image: url(../images/contact_header_s.jpg);
+}
+
+/* 店舗情報 */
+.location {
+  margin-bottom: 3.5rem;
+}
+.location-info {
+  margin-bottom: 2rem;
+}
+.location-info .info {
+  padding: 0;
+}
+
+/* お問い合わせ */
+.email {
+  max-width: 916px;
+  background-color: #faf7f0;
+  border-radius: 48px;
+  padding: 1.5rem 2.5rem 2.5rem;
+  margin: 0 auto 2rem;
+}
+.email p {
+  margin: 1rem 0 2rem;
+}
+
+/* SNS */
+.sns-item {
+  margin-bottom: 2rem;
+}
+.sns-item .heading-medium {
+  margin-bottom: 0.5rem;
+}
+
+/* フッター
+------------------------------- */
+
+.page-footer {
+  padding-top: 6rem;
+}
+
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+
+.copyright {
+  background-color: #44514b;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 6rem;
+  color: #fff;
+}
+
+.ad {
+  display: none;
+}
+
+/* デスクトップ版
+------------------------------- */
+@media (min-width: 950px) {
+  /* 見出し */
+  .page-title,
+  .heading-large {
+    font-size: 3rem;
+  }
+
+  .page-title {
+    padding: 0.5rem 2rem;
+  }
+
+  .price-title {
+    font-size: 2rem;
+  }
+
+  /* ヘッダーカバー画像 */
+  .cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+  }
+
+  .sub-cover {
+    height: 400px;
+    background-position: center;
+    margin-bottom: 6rem;
+  }
+
+  /* ヘッダー */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    position: absolute;
+    top: 16px;
+    right: 100px;
+  }
+
+  .btn-menu,
+  .btn-mail {
+    display: none;
+  }
+
+  /* HOME */
+  .cover-home {
+    background-image: url(../images/studio.jpg);
+  }
+  .about {
+    margin: 4rem auto 0;
+  }
+  /* MENU */
+  .cover-menu {
+    background-image: url(../images/menu_header.jpg);
+  }
+
+  .grid {
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item img {
+    margin-bottom: 0.5rem;
+  }
+  .item p {
+    font-size: 1rem;
+  }
+
+  /* PRICE */
+  .cover-price {
+    background-image: url(../images/price_header.jpg);
+  }
+
+  /* FAQ */
+  .cover-faq {
+    background-image: url(../images/faq_header.jpg);
+  }
+
+  /* CONTACT */
+  .cover-contact {
+    background-image: url(../images/contact_header.jpg);
+  }
+
+  /* フッター */
+  .page-footer {
+    padding-top: 6rem;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+  .location {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+/* タブレット・スマホ版
+------------------------------- */
+@media (max-width: 949px) {
+  .btn-menu {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #002f47;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+
+  .main-nav {
+    height: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    display: block;
+    z-index: 1;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  .main-nav a {
+    display: block;
+  }
+  .main-nav.open-menu {
+    height: 200px;
+    background-color: rgba(245, 243, 237, 0.75);
+  }
+
+  .btn-mail {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #002f47;
+    text-align: center;
+  }
+
+  .btn-mail a {
+    color: #002f47;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .page-header {
+    background-color: #f1f1f1;
+  }
+
+  .video {
+    width: 320px;
+    height: 202px;
+  }
+
+  .splide {
+    height: 200px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .splide__track {
+    height: 160px;
+  }
+
+  .splide__list img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin: 40px 0;
+  }
+}
