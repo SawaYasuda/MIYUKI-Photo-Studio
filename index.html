@@ -34,6 +34,7 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
     />
 
+    <!-- splide.js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
 
     <!-- OGP -->
@@ -177,7 +178,7 @@
     </footer>
   </body>
 
-  <!-- JavaScript -->
+  <!-- JavaScript menu-->
   <script>
     const btn = document.querySelector(".btn-menu");
     const nav = document.querySelector(".main-nav");
@@ -192,13 +193,13 @@
     });
   </script>
 
-  <!-- JavaScript -->
+  <!-- JavaScript slider-->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 
   <script>
     const options = {
       mediaQuery: "min",
-      fixedWidth: "24rem",
+      fixedWidth: "8rem",
       heightRatio: 0.3,
       gap: 16,
       type: "loop",
@@ -214,8 +215,8 @@
         pauseOnFocus: true,
       },
       breakpoints: {
-        1025: {
-          gap: 24,
+        950: {
+          gap: 32,
           fixedWidth: "10rem",
         },
       },
